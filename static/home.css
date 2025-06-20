@@ -1,0 +1,74 @@
+body
+{
+    font-size: 20pt;
+    text-align: center;
+    font-family: Sui Generis;
+    color: aliceblue;
+    background-image: linear-gradient(to left bottom,beige,navy,purple,black);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img {
+    margin-top:-25pt;
+    height: 200px;
+    width: 200px;
+    font-family: Sui Generis;
+}
+
+img:hover{
+    height:250px;
+    width:250px;  
+    transition-duration: 0.75s;
+    transition-delay: 0.1s; 
+}
+
+nav ul {
+    margin-top: 15pt;
+    font-size: 20pt;
+}
+
+nav ul li {
+    padding: 10px;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+nav ul li a:hover {
+    font-size: 30pt;
+    transition-duration: 0.75s;
+    transition-delay: 0.1s;
+}
+
+#careerpredict{
+    padding:10px;
+    font-size:15pt;
+    border-color: black;
+    border-width: 5px;
+    background-color: white;
+    margin-top:25px;
+    font-family: Sui Generis;
+    height: 45pt;
+    width: 125pt;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+}
+
+#careerpredict:hover {
+    background-color: lightgreen;
+    color: black;
+    height: 50pt;
+    width: 130pt;
+    transition-duration: 0.5s;
+}
+
+#home,#about,#contact {
+    padding: 5px;
+    margin-top: 10px;
+}

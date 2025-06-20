@@ -1,0 +1,47 @@
+body
+{
+    font-size: 20pt;
+    text-align: center;
+    font-family: Sui Generis;
+    color: aliceblue;
+    background-image: linear-gradient(to left bottom,beige,navy,purple,black);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img {
+    margin-top:-15pt;
+    height: 200px;
+    width: 200px;
+    font-family: Sui Generis;
+    position:static;
+    margin-left: -950pt;                    
+}
+
+h1 {
+    margin-top: -45pt;
+}
+
+.result
+{
+    font-size:25pt;
+    background-color: aliceblue;
+    color: black;
+    padding: 5px;
+}
+
+.try-again
+{
+    margin-top: 15pt;
+    font-size:15pt;
+    color: antiquewhite;
+}   
+
+.try-again:hover
+{
+    color:greenyellow;
+    font-size:20pt;
+    transition-delay: 0.1s;
+    transition-duration: 0.75s;
+}

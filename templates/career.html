@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Career Recommender</title>
+    <link rel="stylesheet" type="text/css" href="static/career.css">
+</head>
+<body>
+    <a href="/"><img src="/static/Logo.png" alt="Career Sync"></a>
+    <div class="container">
+        <h1>Career Sync Engine</h1>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+        <center>
+        <form method="POST" action="/predict">
+            <div class="input-fields">
+                <label class="form-label">Rate your ability to use words and language effectively (1-20):</label><br>
+                <input type="number" class="form-control" name="Linguistic" min="1"  max="20" step="0.5" required>
+            </div><br>
+            <div class="input-fields">
+                <label class="form-label">Rate your ability to understand or create music and rhythms (1-20):</label><br>
+                <input type="number" class="form-control" name="Musical" min="1"  max="20" step="0.5" required>
+            </div><br>
+            <div class="input-fields">
+                <label class="form-label">Rate your ability to use your body for physical activities or tasks (1-20):</label><br>
+                <input type="number" class="form-control" name="Bodily" min="1"  max="20" step="0.5" required>
+            </div><br>
+            <div class="input-fields">
+                <label class="form-label">Rate your ability to solve problems using logic and numbers (1-20):</label><br>
+                <input type="number" class="form-control" name="Logical - Mathematical" min="1"  max="20" step="0.5" required>
+            </div><br>
+            <div class="input-fields">
+                <label class="form-label">Rate your ability to picture and manipulate objects in your mind (1-20):</label><br>
+                <input type="number" class="form-control" name="Spatial-Visualization" min="1"  max="20" step="0.5" required>
+            </div><br>
+            <div class="input-fields">
+                <label class="form-label">Rate your ability to understand and interact with others (1-20):</label><br>
+                <input type="number" class="form-control" name="Interpersonal" min="1"  max="20" step="0.5" required>
+            </div><br>
+            <div class="input-fields">
+                <label class="form-label">Rate your ability to understand your own emotions and thoughts (1-20):</label><br>
+                <input type="number" class="form-control" name="Intrapersonal" min="1"  max="20" step="0.5" required>
+            </div><br>
+            <div class="input-fields">
+                <label class="form-label">Rate your ability to recognize and understand patterns in nature (1-20):</label><br>
+                <input type="number" class="form-control" name="Naturalist" min="1"  max="20" step="0.5" required>
+            </div><br><br>
+            <button type="submit" class="predict">Predict Career</button>
+        </form>
+    </center>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
